@@ -1,0 +1,25 @@
+# vsim -gui -l msim_transcript work.tb_anemo 
+# Start time: 17:47:26 on Dec 01,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_anemo(behavior)
+# Loading work.gestion_anemo(arch_gestion_anemo)
+# Loading work.compteur(arch_compteur)
+# Loading work.mae(arch_mae)
+# Loading work.diviseur_1m(arch_diviseur_1m)
+add wave  \
+sim:/tb_anemo/clk_50M \
+sim:/tb_anemo/raz_n \
+sim:/tb_anemo/in_freq_anemo \
+sim:/tb_anemo/continu \
+sim:/tb_anemo/start_stop \
+sim:/tb_anemo/data_anemometre \
+sim:/tb_anemo/data_valid \
+sim:/tb_anemo/freq_mode
+run -all
+# Break key hit
+# Simulation stop requested.
+# End time: 19:20:33 on Dec 01,2024, Elapsed time: 1:33:07
+# Errors: 0, Warnings: 0
