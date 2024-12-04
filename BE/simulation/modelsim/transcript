@@ -1,7 +1,0 @@
-# Compile of compteur.vhd was successful.
-# Compile of diviseur_1M.vhd was successful.
-# Compile of gestion_anemo.vhd was successful.
-# Compile of mae.vhd was successful.
-# Compile of tb_anemo.vhd was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -gui -l msim_transcript work.tb_anemo
