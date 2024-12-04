@@ -1,0 +1,113 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk_50M'
+Slack : -5.299
+TNS   : -184.362
+
+Type  : Slow 1200mV 85C Model Setup 'in_freq_anemo'
+Slack : -0.804
+TNS   : -7.338
+
+Type  : Slow 1200mV 85C Model Setup 'diviseur_1M:divseur_1M_inst|temp'
+Slack : -0.232
+TNS   : -1.547
+
+Type  : Slow 1200mV 85C Model Hold 'in_freq_anemo'
+Slack : 0.377
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'diviseur_1M:divseur_1M_inst|temp'
+Slack : 0.511
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk_50M'
+Slack : 0.547
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_50M'
+Slack : -3.000
+TNS   : -69.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'in_freq_anemo'
+Slack : -3.000
+TNS   : -19.864
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'diviseur_1M:divseur_1M_inst|temp'
+Slack : -1.000
+TNS   : -9.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk_50M'
+Slack : -4.582
+TNS   : -157.353
+
+Type  : Slow 1200mV 0C Model Setup 'in_freq_anemo'
+Slack : -0.591
+TNS   : -4.750
+
+Type  : Slow 1200mV 0C Model Setup 'diviseur_1M:divseur_1M_inst|temp'
+Slack : -0.146
+TNS   : -0.891
+
+Type  : Slow 1200mV 0C Model Hold 'in_freq_anemo'
+Slack : 0.279
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk_50M'
+Slack : 0.491
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'diviseur_1M:divseur_1M_inst|temp'
+Slack : 0.522
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_50M'
+Slack : -3.000
+TNS   : -69.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'in_freq_anemo'
+Slack : -3.000
+TNS   : -19.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'diviseur_1M:divseur_1M_inst|temp'
+Slack : -1.000
+TNS   : -9.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk_50M'
+Slack : -2.570
+TNS   : -75.789
+
+Type  : Fast 1200mV 0C Model Setup 'in_freq_anemo'
+Slack : -0.004
+TNS   : -0.004
+
+Type  : Fast 1200mV 0C Model Setup 'diviseur_1M:divseur_1M_inst|temp'
+Slack : 0.419
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'diviseur_1M:divseur_1M_inst|temp'
+Slack : 0.103
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'in_freq_anemo'
+Slack : 0.189
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk_50M'
+Slack : 0.291
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_50M'
+Slack : -3.000
+TNS   : -88.923
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'in_freq_anemo'
+Slack : -3.000
+TNS   : -29.051
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'diviseur_1M:divseur_1M_inst|temp'
+Slack : -1.000
+TNS   : -9.000
+
+------------------------------------------------------------
