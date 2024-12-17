@@ -1,0 +1,303 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/etudiant/Desktop/verin/simulation/modelsim
+Echipselect
+Z1 w1733497042
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8C:/Users/etudiant/Desktop/verin/ChipSelect.vhd
+Z6 FC:/Users/etudiant/Desktop/verin/ChipSelect.vhd
+l0
+L7
+V`4b4ld9UNI_WIU@DZG9]L1
+!s100 T?=G77JP^TdVjYMLnMLkC1
+Z7 OV;C;10.5b;63
+31
+Z8 !s110 1733709841
+!i10b 1
+Z9 !s108 1733709841.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/etudiant/Desktop/verin/ChipSelect.vhd|
+Z11 !s107 C:/Users/etudiant/Desktop/verin/ChipSelect.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Aarch_chipselect
+R2
+R3
+R4
+DEx4 work 10 chipselect 0 22 `4b4ld9UNI_WIU@DZG9]L1
+l18
+L15
+VgWLW1LX7:o@`D3]IGb@6j1
+!s100 XM_bf<^3bZ6]MEhkclXDU0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Econtrolebutees
+Z14 w1733498008
+Z15 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z16 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R3
+R4
+R0
+Z17 8C:/Users/etudiant/Desktop/verin/ControleButees.vhd
+Z18 FC:/Users/etudiant/Desktop/verin/ControleButees.vhd
+l0
+L6
+VGZlA^kdHNah22Xc<YZGzk1
+!s100 =n^DcSnS4S?a750aE4;7n3
+R7
+31
+R8
+!i10b 1
+R9
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/etudiant/Desktop/verin/ControleButees.vhd|
+Z20 !s107 C:/Users/etudiant/Desktop/verin/ControleButees.vhd|
+!i113 1
+R12
+R13
+Abutee
+R15
+R16
+R3
+R4
+DEx4 work 14 controlebutees 0 22 GZlA^kdHNah22Xc<YZGzk1
+l20
+L15
+V^Ag3QHiPND6]fX>o]`:JL1
+!s100 Rozh@03AU^PFD>C_1K;?81
+R7
+31
+R8
+!i10b 1
+R9
+R19
+R20
+!i113 1
+R12
+R13
+Egest_pwm
+Z21 w1733497993
+R15
+R16
+R3
+R4
+R0
+Z22 8C:/Users/etudiant/Desktop/verin/Gest_PWM.vhd
+Z23 FC:/Users/etudiant/Desktop/verin/Gest_PWM.vhd
+l0
+L6
+VnckZdfI;do_]LL@3U3S?Q0
+!s100 QT]IlBXJPkXoCfoBf@_gU3
+R7
+31
+Z24 !s110 1733709840
+!i10b 1
+Z25 !s108 1733709840.000000
+Z26 !s90 -reportprogress|300|-93|-work|work|C:/Users/etudiant/Desktop/verin/Gest_PWM.vhd|
+Z27 !s107 C:/Users/etudiant/Desktop/verin/Gest_PWM.vhd|
+!i113 1
+R12
+R13
+Aarch_pwm
+R15
+R16
+R3
+R4
+DEx4 work 8 gest_pwm 0 22 nckZdfI;do_]LL@3U3S?Q0
+l26
+L18
+V`WVl;RV^M?Pi<4T3N>U4k1
+!s100 8e9NbLVS0cZ8hYnMe4H<T2
+R7
+31
+R24
+!i10b 1
+R25
+R26
+R27
+!i113 1
+R12
+R13
+Egestionadc
+Z28 w1733503144
+R16
+R15
+R3
+R4
+R0
+Z29 8C:/Users/etudiant/Desktop/verin/GestionADC.vhd
+Z30 FC:/Users/etudiant/Desktop/verin/GestionADC.vhd
+l0
+L6
+V:z30o4kg7DceI6k>N8<Gi3
+!s100 cIze[fLTVPAnzHOEk<>M`2
+R7
+31
+R24
+!i10b 1
+Z31 !s108 1733709839.000000
+Z32 !s90 -reportprogress|300|-93|-work|work|C:/Users/etudiant/Desktop/verin/GestionADC.vhd|
+Z33 !s107 C:/Users/etudiant/Desktop/verin/GestionADC.vhd|
+!i113 1
+R12
+R13
+Aadc
+R16
+R15
+R3
+R4
+DEx4 work 10 gestionadc 0 22 :z30o4kg7DceI6k>N8<Gi3
+l99
+L26
+VzYiPIlee@Doi036D?5FIZ1
+!s100 >dA49e[3DWVjMmWno]19j1
+R7
+31
+R24
+!i10b 1
+R31
+R32
+R33
+!i113 1
+R12
+R13
+Eregistre_decalage
+Z34 w1733500360
+R2
+R3
+R4
+R0
+Z35 8C:/Users/etudiant/Desktop/verin/registre_decalage.vhd
+Z36 FC:/Users/etudiant/Desktop/verin/registre_decalage.vhd
+l0
+L5
+VXedaXE<2aY>;F][3V>;Vi3
+!s100 ^X79Mg2@o4>`cVZ^L7z@c1
+R7
+31
+R24
+!i10b 1
+R25
+Z37 !s90 -reportprogress|300|-93|-work|work|C:/Users/etudiant/Desktop/verin/registre_decalage.vhd|
+Z38 !s107 C:/Users/etudiant/Desktop/verin/registre_decalage.vhd|
+!i113 1
+R12
+R13
+Adec
+R2
+R3
+R4
+DEx4 work 17 registre_decalage 0 22 XedaXE<2aY>;F][3V>;Vi3
+l19
+L16
+V=XX9ddL=Ac;1ZcE]m1nz51
+!s100 `;nY]8fZ6biS1P::l38Xz0
+R7
+31
+R24
+!i10b 1
+R25
+R37
+R38
+!i113 1
+R12
+R13
+Esig_10hz
+Z39 w1732174475
+R2
+R3
+R4
+R0
+Z40 8C:/Users/etudiant/Desktop/verin/Sig_10Hz.vhd
+Z41 FC:/Users/etudiant/Desktop/verin/Sig_10Hz.vhd
+l0
+L6
+V9iKPSFY7h2QP02XWk::@_3
+!s100 HO5WBVMmF=A^]8EMSk_f03
+R7
+31
+R8
+!i10b 1
+R9
+Z42 !s90 -reportprogress|300|-93|-work|work|C:/Users/etudiant/Desktop/verin/Sig_10Hz.vhd|
+Z43 !s107 C:/Users/etudiant/Desktop/verin/Sig_10Hz.vhd|
+!i113 1
+R12
+R13
+Aarch_div10
+R2
+R3
+R4
+DEx4 work 8 sig_10hz 0 22 9iKPSFY7h2QP02XWk::@_3
+l16
+L13
+Vl^j^e;Bb=D7WC7NEbW=G=1
+!s100 Mc<7i:jVaNVgCIc5GQFKh2
+R7
+31
+R8
+!i10b 1
+R9
+R42
+R43
+!i113 1
+R12
+R13
+Esig_1mhz
+Z44 w1732174470
+R2
+R3
+R4
+R0
+Z45 8C:/Users/etudiant/Desktop/verin/Sig_1MHz.vhd
+Z46 FC:/Users/etudiant/Desktop/verin/Sig_1MHz.vhd
+l0
+L5
+V]h@JbG;o<mCWLN?HH=D3Q0
+!s100 h7_HY>RBe9G]Hk:zd>>gj3
+R7
+31
+R8
+!i10b 1
+R9
+Z47 !s90 -reportprogress|300|-93|-work|work|C:/Users/etudiant/Desktop/verin/Sig_1MHz.vhd|
+Z48 !s107 C:/Users/etudiant/Desktop/verin/Sig_1MHz.vhd|
+!i113 1
+R12
+R13
+Aarch_div1m
+R2
+R3
+R4
+DEx4 work 8 sig_1mhz 0 22 ]h@JbG;o<mCWLN?HH=D3Q0
+l15
+L12
+V]Zo;7KMcBL2;mK3455>V<3
+!s100 bF0ERQCYc09313RN@JQEk2
+R7
+31
+R8
+!i10b 1
+R9
+R47
+R48
+!i113 1
+R12
+R13

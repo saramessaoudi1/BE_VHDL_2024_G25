@@ -1,0 +1,616 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/etudiant/Desktop/verin/simulation/modelsim
+Echipselect
+Z1 w1733497042
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8C:/Users/etudiant/Desktop/verin/ChipSelect.vhd
+Z6 FC:/Users/etudiant/Desktop/verin/ChipSelect.vhd
+l0
+L7
+VK4<Q1Tk0B9NQWB^e3Lg142
+!s100 T?=G77JP^TdVjYMLnMLkC1
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1733710203
+!i10b 1
+Z9 !s108 1733710202.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/etudiant/Desktop/verin/ChipSelect.vhd|
+Z11 !s107 C:/Users/etudiant/Desktop/verin/ChipSelect.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Aarch_chipselect
+R2
+R3
+R4
+DEx4 work 10 chipselect 0 22 K4<Q1Tk0B9NQWB^e3Lg142
+l18
+L15
+VO0P[A=Bf8X:Qn3ARM[ghE0
+!s100 XM_bf<^3bZ6]MEhkclXDU0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Econtrolebutees
+Z14 w1733710151
+R2
+Z15 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z16 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R3
+R4
+R0
+Z17 8C:/Users/etudiant/Desktop/verin/ControleButees.vhd
+Z18 FC:/Users/etudiant/Desktop/verin/ControleButees.vhd
+l0
+L5
+VYE^bDfRTE0eSd<Gin1lj`2
+!s100 5=iHgaFE@5CTL362GS9^e1
+R7
+32
+R8
+!i10b 1
+Z19 !s108 1733710203.000000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/etudiant/Desktop/verin/ControleButees.vhd|
+Z21 !s107 C:/Users/etudiant/Desktop/verin/ControleButees.vhd|
+!i113 1
+R12
+R13
+Abutee
+R2
+R15
+R16
+R3
+R4
+Z22 DEx4 work 14 controlebutees 0 22 YE^bDfRTE0eSd<Gin1lj`2
+l18
+L15
+V__49?9KWlMb>iGZT<0Z690
+!s100 A:oVeFcNOT:_ni9:NJTJI2
+R7
+32
+R8
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R12
+R13
+Abhv
+R15
+R16
+R3
+R4
+DEx4 work 14 controlebutees 0 22 QTb9Xhjd^G>m:@dg@Z`ci2
+l19
+L13
+V9PbXMCZgdZR<VDWEJSMNA1
+!s100 <R`:lfVknbcC]icUFACbO0
+R7
+32
+Z23 !s110 1732182414
+!i10b 1
+Z24 !s108 1732182414.000000
+R20
+R21
+!i113 1
+R12
+R13
+w1732182361
+Egest_pwm
+Z25 w1733497993
+R15
+R16
+R3
+R4
+R0
+Z26 8C:/Users/etudiant/Desktop/verin/Gest_PWM.vhd
+Z27 FC:/Users/etudiant/Desktop/verin/Gest_PWM.vhd
+l0
+L6
+VefV4nJ8:ED_CBA7Z>Y<RV0
+!s100 QT]IlBXJPkXoCfoBf@_gU3
+R7
+32
+R8
+!i10b 1
+R19
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/etudiant/Desktop/verin/Gest_PWM.vhd|
+Z29 !s107 C:/Users/etudiant/Desktop/verin/Gest_PWM.vhd|
+!i113 1
+R12
+R13
+Aarch_pwm
+R15
+R16
+R3
+R4
+Z30 DEx4 work 8 gest_pwm 0 22 efV4nJ8:ED_CBA7Z>Y<RV0
+l26
+L18
+VVH:;8QzOmA[6UhXb@Vk[V1
+!s100 8e9NbLVS0cZ8hYnMe4H<T2
+R7
+32
+R8
+!i10b 1
+R19
+R28
+R29
+!i113 1
+R12
+R13
+Egestionadc
+Z31 w1733503144
+R16
+R15
+R3
+R4
+R0
+Z32 8C:/Users/etudiant/Desktop/verin/GestionADC.vhd
+Z33 FC:/Users/etudiant/Desktop/verin/GestionADC.vhd
+l0
+L6
+VXb@Y>Njb>z`aPQH_H>k?E2
+!s100 cIze[fLTVPAnzHOEk<>M`2
+R7
+32
+R8
+!i10b 1
+R19
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/etudiant/Desktop/verin/GestionADC.vhd|
+Z35 !s107 C:/Users/etudiant/Desktop/verin/GestionADC.vhd|
+!i113 1
+R12
+R13
+Aadc
+R16
+R15
+R3
+R4
+Z36 DEx4 work 10 gestionadc 0 22 Xb@Y>Njb>z`aPQH_H>k?E2
+l99
+L26
+V9CL]eH5:9@3EY3d^Ko11U3
+!s100 >dA49e[3DWVjMmWno]19j1
+R7
+32
+R8
+!i10b 1
+R19
+R34
+R35
+!i113 1
+R12
+R13
+Aarch_reg_dec
+R2
+R3
+R4
+Z37 DEx4 work 10 gestionadc 0 22 a[KgSMd_6^I8VDKM_inM?1
+l19
+L16
+V>RZhE3E;X@=Jc50agPi;73
+!s100 40HLnYBgmdfB6oSK_eUF51
+R7
+32
+!s110 1732179604
+!i10b 1
+!s108 1732179604.000000
+R34
+R35
+!i113 1
+R12
+R13
+w1732178042
+Eregistre_decalage
+Z38 w1733500360
+R2
+R3
+R4
+R0
+Z39 8C:/Users/etudiant/Desktop/verin/registre_decalage.vhd
+Z40 FC:/Users/etudiant/Desktop/verin/registre_decalage.vhd
+l0
+L5
+VCz=3ETQNf9@P6WiQ6:m853
+!s100 ^X79Mg2@o4>`cVZ^L7z@c1
+R7
+32
+R8
+!i10b 1
+R19
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/etudiant/Desktop/verin/registre_decalage.vhd|
+Z42 !s107 C:/Users/etudiant/Desktop/verin/registre_decalage.vhd|
+!i113 1
+R12
+R13
+Adec
+R2
+R3
+R4
+Z43 DEx4 work 17 registre_decalage 0 22 Cz=3ETQNf9@P6WiQ6:m853
+l19
+L16
+Vl?Zz8ZSXFO=I_4c3mT8R51
+!s100 `;nY]8fZ6biS1P::l38Xz0
+R7
+32
+R8
+!i10b 1
+R19
+R41
+R42
+!i113 1
+R12
+R13
+Esig_10hz
+Z44 w1732174475
+R2
+R3
+R4
+R0
+Z45 8C:/Users/etudiant/Desktop/verin/Sig_10Hz.vhd
+Z46 FC:/Users/etudiant/Desktop/verin/Sig_10Hz.vhd
+l0
+L6
+VMb_Fm?eS_]ol;5hhYCHT70
+!s100 HO5WBVMmF=A^]8EMSk_f03
+R7
+32
+R8
+!i10b 1
+R19
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/etudiant/Desktop/verin/Sig_10Hz.vhd|
+Z48 !s107 C:/Users/etudiant/Desktop/verin/Sig_10Hz.vhd|
+!i113 1
+R12
+R13
+Aarch_div10
+R2
+R3
+R4
+Z49 DEx4 work 8 sig_10hz 0 22 Mb_Fm?eS_]ol;5hhYCHT70
+l16
+L13
+VUjbQLV1JG69SCTJD43i9l1
+!s100 Mc<7i:jVaNVgCIc5GQFKh2
+R7
+32
+R8
+!i10b 1
+R19
+R47
+R48
+!i113 1
+R12
+R13
+Esig_1mhz
+Z50 w1732174470
+R2
+R3
+R4
+R0
+Z51 8C:/Users/etudiant/Desktop/verin/Sig_1MHz.vhd
+Z52 FC:/Users/etudiant/Desktop/verin/Sig_1MHz.vhd
+l0
+L5
+VHQSAEk1H`1l_>3UYc>f^L3
+!s100 h7_HY>RBe9G]Hk:zd>>gj3
+R7
+32
+R8
+!i10b 1
+R19
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/etudiant/Desktop/verin/Sig_1MHz.vhd|
+Z54 !s107 C:/Users/etudiant/Desktop/verin/Sig_1MHz.vhd|
+!i113 1
+R12
+R13
+Aarch_div1m
+R2
+R3
+R4
+Z55 DEx4 work 8 sig_1mhz 0 22 HQSAEk1H`1l_>3UYc>f^L3
+l15
+L12
+V5Fo@?56^cR]H2;J]JTXL]0
+!s100 bF0ERQCYc09313RN@JQEk2
+R7
+32
+R8
+!i10b 1
+R19
+R53
+R54
+!i113 1
+R12
+R13
+Etb
+Z56 w1733506050
+R2
+R15
+R16
+R3
+R4
+R0
+Z57 8C:/Users/etudiant/Desktop/verin/tb.vhd
+Z58 FC:/Users/etudiant/Desktop/verin/tb.vhd
+l0
+L6
+VlIHiHD6lAW;Z:3l[FQN?W1
+!s100 ^A8FW<4;l72VRZ9J`XdVG1
+R7
+32
+Z59 !s110 1733506108
+!i10b 1
+Z60 !s108 1733506108.000000
+Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/etudiant/Desktop/verin/tb.vhd|
+Z62 !s107 C:/Users/etudiant/Desktop/verin/tb.vhd|
+!i113 1
+R12
+R13
+Atest
+R36
+R2
+R15
+R16
+R3
+R4
+DEx4 work 2 tb 0 22 lIHiHD6lAW;Z:3l[FQN?W1
+l29
+L10
+VUW7`3>7>n?:O5mDWTP2f`1
+!s100 SOa:`k:Oma2OS781:I@N=2
+R7
+32
+R59
+!i10b 1
+R60
+R61
+R62
+!i113 1
+R12
+R13
+Asim
+R16
+R15
+R36
+R2
+R3
+R4
+DEx4 work 2 tb 0 22 ]Y;0RMIY`ZGQF9gOV8J4F3
+l26
+L8
+VZ0R=1fGk7Igh9Tg_@;8nE2
+!s100 [FMoDRWcXBPhLeGVelWeZ3
+R7
+32
+!s110 1733503206
+!i10b 1
+!s108 1733503206.000000
+R61
+R62
+!i113 1
+R12
+R13
+w1733502851
+Atestb
+R16
+R15
+R36
+R3
+R4
+Z63 DEx4 work 2 tb 0 22 ?U`@5?X_U9<BZ]z;Yz16=0
+l23
+L7
+V:mI_P^1TbKk`8HE`C@_PX0
+!s100 oMFO`F?>k4z;@;9=Yd5l@2
+R7
+32
+!s110 1733500162
+!i10b 1
+!s108 1733500162.000000
+R61
+R62
+!i113 1
+R12
+R13
+w1733497402
+Atestbench
+R16
+R15
+R36
+R3
+R4
+R63
+l23
+L7
+VTZEm<^Hc9LESQ6;7E3RR`0
+!s100 j=UW;OW?l_SK=M4PAZI4h0
+R7
+32
+!s110 1733497107
+!i10b 1
+!s108 1733497106.000000
+R61
+R62
+!i113 1
+R12
+R13
+w1733496697
+Etb_controlebutees
+w1732182182
+R15
+R16
+R3
+R4
+R0
+8C:/Users/etudiant/Desktop/verin/tb_butee.vhd
+FC:/Users/etudiant/Desktop/verin/tb_butee.vhd
+l0
+L5
+V[GSm;d_b^5:O3D?lSJZWI3
+!s100 RNAW0^m`WflCJceY=Yc=b0
+R7
+32
+R23
+!i10b 1
+R24
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/etudiant/Desktop/verin/tb_butee.vhd|
+!s107 C:/Users/etudiant/Desktop/verin/tb_butee.vhd|
+!i113 1
+R12
+R13
+Etb_gestionadc
+Z64 w1732179492
+R15
+R16
+R3
+R4
+R0
+R57
+R58
+l0
+L5
+VX8cZe^j7Gh^iiVh02>bUE0
+!s100 [9nz0c89@Ko]W^VFBH5R70
+R7
+32
+Z65 !s110 1732179605
+!i10b 1
+Z66 !s108 1732179605.000000
+R61
+R62
+!i113 1
+R12
+R13
+Asim
+R2
+R37
+R15
+R16
+R3
+R4
+DEx4 work 13 tb_gestionadc 0 22 X8cZe^j7Gh^iiVh02>bUE0
+l21
+L8
+VKRWjDk_9WkXP6=;AP5Qf>2
+!s100 EIY^<31o35BWEkb:Q^V7i3
+R7
+32
+R65
+!i10b 1
+R66
+R61
+R62
+!i113 1
+R12
+R13
+Etb_system
+Z67 w1733709770
+R2
+R3
+R4
+R0
+R57
+R58
+l0
+L5
+V`o;7d8V4]QDXDHdf>3D5?2
+!s100 CYamS9_QN>K0>SJnz0BMk2
+R7
+32
+R8
+!i10b 1
+R19
+R61
+R62
+!i113 1
+R12
+R13
+Atest
+R43
+R22
+R15
+R16
+R30
+R49
+R55
+R2
+R3
+R4
+Z68 DEx4 work 9 tb_system 0 22 `o;7d8V4]QDXDHdf>3D5?2
+l28
+L9
+Z69 VOaF_8QF4<HmInT`5`mkQf1
+Z70 !s100 HLL@HM_=Q0EI<kT_aeRMK2
+R7
+32
+R8
+!i10b 1
+R19
+R61
+R62
+!i113 1
+R12
+R13
+Etestbench_gestionadc
+Z71 w1733319503
+R2
+R3
+R4
+R0
+Z72 8C:/Users/etudiant/Desktop/verin/Testbench_GestionADC.vhd
+Z73 FC:/Users/etudiant/Desktop/verin/Testbench_GestionADC.vhd
+l0
+L5
+Vm50eYd8m9`l^bjP2:48^_1
+!s100 LTK=;6:01g`ISk1K<Qz<40
+R7
+32
+Z74 !s110 1733330313
+!i10b 1
+Z75 !s108 1733330313.000000
+Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/etudiant/Desktop/verin/Testbench_GestionADC.vhd|
+Z77 !s107 C:/Users/etudiant/Desktop/verin/Testbench_GestionADC.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R2
+R3
+R4
+DEx4 work 20 testbench_gestionadc 0 22 m50eYd8m9`l^bjP2:48^_1
+l50
+L8
+VPc27PS[e3Pc^A5>N;QK=Q2
+!s100 bHXWBdVRGhDdaB?RA3M^80
+R7
+32
+R74
+!i10b 1
+R75
+R76
+R77
+!i113 1
+R12
+R13
