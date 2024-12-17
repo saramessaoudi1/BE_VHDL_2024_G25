@@ -1,0 +1,10 @@
+# Compile of ChipSelect.vhd was successful.
+# Compile of ControleButees.vhd was successful.
+# Compile of Gest_PWM.vhd was successful.
+# Compile of GestionADC.vhd was successful.
+# Compile of registre_decalage.vhd was successful.
+# Compile of Sig_1MHz.vhd was successful.
+# Compile of Sig_10Hz.vhd was successful.
+# Compile of tb.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui -l msim_transcript work.tb
