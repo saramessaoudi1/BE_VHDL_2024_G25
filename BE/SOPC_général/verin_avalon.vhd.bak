@@ -1,0 +1,117 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity verin_avalon is
+    port (
+        clk, chipselect, write_n, reset_n : in std_logic;
+        writedata : in std_logic_vector (31 downto 0);
+        readdata : out std_logic_vector (31 downto 0);
+        address: in std_logic_vector (2 downto 0);
+
+        data_in :  in  std_logic;
+        cs_n :  out  std_logic;
+        un_M :  out  std_logic;
+        out_pwm :  out  std_logic;
+        out_sens :  out  std_logic
+    );
+end entity;
+
+architecture arch_VerAvalon of verin_avalon is
+    signal fin_course_g : std_logic;
+    signal fin_course_d : std_logic;
+    signal raz_n : std_logic;
+    signal sens : std_logic;
+    signal butee_d : std_logic_vector(11 downto 0);
+    signal butee_g : std_logic_vector(11 downto 0);
+    signal duty : std_logic_vector(31 downto 0);
+    signal freq : std_logic_vector(31 downto 0);
+    signal Angle_barre : std_logic_vector(11 downto 0);
+    signal config : std_logic_vector(31 downto 0);
+
+    component GestionADC
+       
+	 Port (
+    clk_50MHz      : in std_logic;                        -- Horloge principale 50 MHz
+    raz_n          : in std_logic;                        -- Signal de reset actif bas
+    data_in        : in std_logic;                        -- Données d'entrée série
+    clk_1M         : out std_logic;                       -- Signal horloge 1 MHz
+    cs             : out std_logic;                       -- Signal de sélection de puce
+    start_conv     : out std_logic;                       -- Signal de démarrage de conversion
+    data_out       : out std_logic_vector(11 downto 0);   -- Données de sortie (12 bits)
+    out_pwm        : out std_logic;                       -- PWM de sortie
+    out_sens       : out std_logic;                       -- Sens de sortie
+	 frequence, C_duty : in std_logic_vector (15 downto 0);
+
+	 sens       	 : in std_logic;                       
+	 enable         : in std_logic;                       
+
+    fin_course_g   : out std_logic;                       -- Fin de course gauche
+    fin_course_d   : out std_logic                        -- Fin de course droite
+);
+end component;
+
+
+
+begin
+    -- Instanciation de Gestion_Verin
+   GestionADC_inst : entity work.GestionADC
+    port map (
+        clk_50MHz    => clk,
+        raz_n        => reset_n,
+        data_in      => data_in,
+        frequence    => freq(15 downto 0),
+        C_duty       => duty(15 downto 0),
+        sens         => sens,
+        enable       => '1', -- Activer la gestion ADC (peut être modifié selon le besoin)
+        clk_1M       => open,
+        cs           => cs_n,
+        start_conv   => open,
+        data_out     => Angle_barre,
+        out_pwm      => out_pwm,
+        out_sens     => out_sens,
+        fin_course_g => fin_course_g,
+        fin_course_d => fin_course_d
+    );
+
+
+    -- Processus d'écriture
+    process_write : process (clk, reset_n)
+    begin
+        if reset_n = '0' then
+            freq <= (others => '0');
+            duty <= (others => '0');
+            raz_n <= '0';
+        elsif rising_edge(clk) then
+            if chipselect = '1' and write_n = '0' then
+                case address is
+                    when "000" => freq <= writedata;
+                    when "001" => duty <= writedata;
+                    when "010" => butee_g <= writedata(11 downto 0);
+                    when "011" => butee_d <= writedata(11 downto 0);
+                    when "100" =>
+                        config <= writedata;
+                        raz_n <= config(0);
+                        sens <= config(2);
+                        fin_course_g <= config(4);
+                        fin_course_d <= config(3);
+                    when others => null;
+                end case;
+            end if;
+        end if;
+    end process;
+
+    -- Processus de lecture
+    process_Read : process (freq, duty, butee_g, butee_d, Angle_barre, address)
+    begin
+        case address is
+            when "000" => readdata <= freq;
+            when "001" => readdata <= duty;
+            when "010" => readdata <= (31 downto 12 => '0') & butee_g;
+            when "011" => readdata <= (31 downto 12 => '0') & butee_d;
+            when "100" => readdata <= config;
+            when "101" => readdata <= (31 downto 12 => '0') & Angle_barre;
+            when others => readdata <= (others => '0');
+        end case;
+    end process;
+end architecture;

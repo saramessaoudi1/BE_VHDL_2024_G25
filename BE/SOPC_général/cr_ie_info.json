@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "windows64",
+		"os_name" : "Windows 10",
+		"os_version" : "10.0"
+	},
+	"error" : {
+		"executable" : "quartus_map",
+		"comment" : "not_applicable",
+		"error_message" : "Access Violation at 0X00007FFD63D4C963",
+		"source_file" : "unknown",
+		"line" : "0",
+		"stack_trace" : "\t0x7ffd63d4c962: MSVCR120 + 0x3c962\n\t0x7ffd386d81af: SYS_CPT + 0x481af (cpt_ampp_ios_get + 0xf)\n\t0x7ffd386e4d88: SYS_CPT + 0x54d88 (cpt_ampp_init_file + 0x28)\n\t0x7ffd386e25c3: SYS_CPT + 0x525c3 (cpt_ampp_alloc_file + 0x1b)\n\t0x7ffd386e2f42: SYS_CPT + 0x52f42 (cpt_ampp_create_io + 0xc2)\n\t0x7ffd386dd2a6: SYS_CPT + 0x4d2a6 (?initialize@CPT_AMPP_OSTREAMBUF@@QEAAXPEAV?$basic_ofstream@DU?$char_traits@D@std@@@std@@W4PRODUCT_TYPE@CPT_AMPP_OFSTREAM@@AEBV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@3@AEBV?$vector@_NV?$allocator@_N@std@@@3@@Z + 0x176)\n\t0x7ffd386dd6e4: SYS_CPT + 0x4d6e4 (?open@CPT_AMPP_OSTREAM@@QEAAXPEBDH@Z + 0x1c4)\n\t0x7ffd51af7878: sld_sci + 0x27878 (?build_streams@SCI_FABRIC_HW_TCL_STREAM_FACTORY@@AEAAXPEBD@Z + 0x228)\n\t0x7ffd51af62fe: sld_sci + 0x262fe (??0SCI_FABRIC_HW_TCL_STREAM_FACTORY@@QEAA@PEBD@Z + 0x1e)\n\t0x7ffd51b04067: sld_sci + 0x34067 (?get_hub_parameters_for_super_fabric@SCI_INSTANCE_BUILDER@@CA_NPEAV?$vector@PEBDV?$allocator@PEBD@std@@@std@@0PEAV?$set@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@3@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@22AEB_N@Z + 0x837)\n\t0x7ffd51b03140: sld_sci + 0x33140 (?get_hub_parameters@SCI_INSTANCE_BUILDER@@SA_NPEAV?$vector@PEBDV?$allocator@PEBD@std@@@std@@0PEAV?$set@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@3@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@22AEB_N@Z + 0x480)\n\t0x7ffd428dbebc: synth_sgn + 0x13bebc\n\t0x7ffd4284926b: synth_sgn + 0xa926b\n\t0x7ffd428489e3: synth_sgn + 0xa89e3\n\t0x7ffd42854409: synth_sgn + 0xb4409\n\t0x7ffd4285093b: synth_sgn + 0xb093b\n\t0x7ffd427b324e: synth_sgn + 0x1324e\n\t0x7ff7cc624351: quartus_map + 0x4351 (?qsyn_execute_sgn@@YA?AW4SGN_STATE_ENUM@@PEAVCMP_FACADE@@AEAV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@4@PEAVTHR_NAMED_PIPE@@3@Z + 0x131)\n\t0x7ff7cc633f9c: quartus_map + 0x13f9c\n\t0x7ff7cc633aa6: quartus_map + 0x13aa6 (std::`dynamic initializer for &apos;_Fac_tidy_reg&apos;&apos; + 0x12856)\n\t0x7ffd5bb712bc: comp_qexe + 0x112bc\n\t0x7ffd5bb76142: comp_qexe + 0x16142\n\t0x7ffd5bb76e51: comp_qexe + 0x16e51\n\t0x7ff7cc63b08b: quartus_map + 0x1b08b (std::`dynamic initializer for &apos;_Fac_tidy_reg&apos;&apos; + 0x19e3b)\n\t0x7ffd618c2e98: CCL_MSG + 0x12e98\n\t0x7ffd618c467e: CCL_MSG + 0x1467e\n\t0x7ffd619c6660: ccl_mem + 0x16660 (?mem_thread_wrapper@@YAPEAXP6APEAXPEAX@Z0@Z + 0x70)\n\t0x7ffd618c2761: CCL_MSG + 0x12761\n\t0x7ff7cc649872: quartus_map + 0x29872 (__tmainCRTStartup + 0x10e)\n\t0x7ffd7b7b7373: KERNEL32 + 0x17373 (BaseThreadInitThunk + 0x13)\n\t0x7ffd7d49cc90: ntdll + 0x4cc90 (RtlUserThreadStart + 0x20)\n",
+		"subsystem" : "unknown"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "18.1.0",
+		"build" : "625",
+		"edition" : "Lite Edition"
+	}
+}

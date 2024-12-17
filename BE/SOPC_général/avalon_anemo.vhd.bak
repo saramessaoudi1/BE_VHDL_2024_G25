@@ -1,0 +1,89 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_unsigned.all;
+use IEEE.std_logic_arith.all;
+
+entity avalon_anemo is
+    port (
+        clk_50M, chipselect, write_n, reset_n : in std_logic;
+        writedata : in std_logic_vector(31 downto 0);
+        readdata : out std_logic_vector(31 downto 0);
+        address : in std_logic_vector(1 downto 0);
+        
+        -- Ports spécifiques de l'anémomètre
+        continu : in std_logic;
+        start_stop : in std_logic;
+        in_freq_anemo : in std_logic;
+        
+        data_valid : out std_logic;
+        data_anemometre : out std_logic_vector(7 downto 0)
+    );
+end entity;
+
+architecture arch_avalon_anemo of avalon_anemo is
+    signal frq : std_logic_vector(31 downto 0);
+    signal control : std_logic_vector(1 downto 0);
+    signal internal_data_valid : std_logic;
+    signal internal_data_anemometre : std_logic_vector(7 downto 0);
+
+begin
+
+    -- Processus de contrôle et logique principale de l'anémomètre
+    process_anemo: process (clk_50M, reset_n)
+    begin
+        if reset_n = '0' then
+            frq <= (others => '0');
+            control <= (others => '0');
+            internal_data_valid <= '0';
+            internal_data_anemometre <= (others => '0');
+        elsif rising_edge(clk_50M) then
+            if control(1) = '1' then
+                -- Logique d'activation des mesures selon `start_stop` et `continu`
+                if start_stop = '1' or continu = '1' then
+                    internal_data_valid <= '1';
+                    -- Simuler la capture de la fréquence (simple exemple)
+                    internal_data_anemometre <= frq(7 downto 0); 
+                else
+                    internal_data_valid <= '0';
+                end if;
+            end if;
+        end if;
+    end process process_anemo;
+
+    -- Interface Avalon : écriture des registres
+    process_write: process (clk_50M, reset_n)
+    begin
+        if reset_n = '0' then
+            frq <= (others => '0');
+            control <= (others => '0');
+        elsif rising_edge(clk_50M) then
+            if chipselect = '1' and write_n = '0' then
+                if address = "00" then
+                    frq <= writedata;
+                elsif address = "01" then
+                    control <= writedata(1 downto 0);
+                end if;
+            end if;
+        end if;
+    end process process_write;
+
+    -- Interface Avalon : lecture des registres
+    process_read: process (address, frq, control, internal_data_anemometre)
+    begin
+        case address is
+            when "00" =>
+                readdata <= frq;
+            when "01" =>
+                readdata <= (24 downto 0 => '0') & control;
+            when "10" =>
+                readdata <= (24 downto 0 => '0') & internal_data_anemometre;
+            when others =>
+                readdata <= (others => '0');
+        end case;
+    end process process_read;
+
+    -- Assignation des sorties spécifiques
+    data_valid <= internal_data_valid;
+    data_anemometre <= internal_data_anemometre;
+
+end architecture arch_avalon_anemo;
