@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Dec 15 18:22:31 2024
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : MySOPC
+Top-level Entity Name : Mon_Sopc
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 2,735 / 22,320 ( 12 % )
+    Total combinational functions : 2,501 / 22,320 ( 11 % )
+    Dedicated logic registers : 1,459 / 22,320 ( 7 % )
+Total registers : 1459
+Total pins : 18 / 154 ( 12 % )
+Total virtual pins : 0
+Total memory bits : 395,264 / 608,256 ( 65 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
