@@ -1,0 +1,52 @@
+Library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity GestionADC is
+	port(
+		start_conv : in std_logic;
+		cs : in std_logic;
+		clk_1M : in std_logic;
+		raz_n : in std_logic;
+		data_in : in std_logic;
+		data_out : out std_logic_vector(11 downto 0)
+		);
+end GestionADC;
+
+architecture ADC of GestionADC is
+	signal decalage : std_logic_vector(11 downto 0);
+
+	begin 
+
+	process(clk_1M, raz_n)
+		variable compt1 : integer range 0 to 16;
+		variable compt2 : integer range 0 to 16;
+
+		begin
+		
+		-- MAE: - activation du signal start_conv pour démarrer la conv
+				 -- attente de la fin de la conv
+				 -- récupération des données après la conv
+
+			if raz_n = '0' then
+				data_out <= x"000";  -- reinit à zéro [0..11]
+			elsif falling_edge(clk_1M) then
+				if start_conv ='0' and cs = '0' then  --l'ADC est prêt (la conversion peut être lue) 
+					compt1 := compt1 + 1; --les variables compt1 et compt2 sont incrémentées
+					compt2 := compt2 + 1;
+					if compt1 >= 5 then --compteur général 
+						if compt2 <= 15 then --compt2 pour décaler les données de l'ADC dans le registre decalage
+							decalage(16- compt2) <= data_in;
+						end if;	
+					end if;
+				else  --ADC n'est pas prêt/ conversion en pause
+					compt1 := 0;
+					compt2 := 0;
+				end if;
+			end if;
+
+			data_out <= decalage;
+
+	end process;
+
+end architecture ADC;
