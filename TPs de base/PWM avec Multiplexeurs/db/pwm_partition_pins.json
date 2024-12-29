@@ -1,0 +1,37 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "pwm_out",
+					"strict" : false
+				},
+				{
+					"name" : "mux_rapport[0]",
+					"strict" : false
+				},
+				{
+					"name" : "mux_rapport[1]",
+					"strict" : false
+				},
+				{
+					"name" : "reset_n",
+					"strict" : false
+				},
+				{
+					"name" : "mux_freq[1]",
+					"strict" : false
+				},
+				{
+					"name" : "mux_freq[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
