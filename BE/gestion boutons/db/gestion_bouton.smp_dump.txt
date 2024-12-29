@@ -1,0 +1,11 @@
+
+State Machine - |gestion_bouton|etat
+Name etat.MODE_AUTO etat.GO_TRIBORD etat.WAIT_TRIBORD etat.GO_BABORD etat.WAIT_BABORD etat.WAIT_BT etat.ALLUMAGE etat.IDLE 
+etat.IDLE 0 0 0 0 0 0 0 0 
+etat.ALLUMAGE 0 0 0 0 0 0 1 1 
+etat.WAIT_BT 0 0 0 0 0 1 0 1 
+etat.WAIT_BABORD 0 0 0 0 1 0 0 1 
+etat.GO_BABORD 0 0 0 1 0 0 0 1 
+etat.WAIT_TRIBORD 0 0 1 0 0 0 0 1 
+etat.GO_TRIBORD 0 1 0 0 0 0 0 1 
+etat.MODE_AUTO 1 0 0 0 0 0 0 1 
