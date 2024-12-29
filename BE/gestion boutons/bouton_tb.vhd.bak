@@ -1,0 +1,87 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.numeric_std.ALL;
+
+ENTITY bouton_tb IS
+-- Pas de ports dans un testbench
+END bouton_tb;
+
+ARCHITECTURE behavior OF bouton_tb IS
+    -- Composant à tester
+    COMPONENT bouton
+        PORT (
+            clk          : in std_logic;
+            reset_n      : in std_logic;
+            BP_Babord    : in std_logic;
+            BP_Tribord   : in std_logic;
+            BP_STBY      : in std_logic;
+            ledSTBY      : out std_logic;
+            ledTribord   : out std_logic;
+            ledBabord    : out std_logic;
+            codeFonction : out std_logic_vector(3 downto 0)
+        );
+    END COMPONENT;
+
+    -- Signaux pour simuler les ports du composant
+    SIGNAL clk          : std_logic := '0';
+    SIGNAL reset_n      : std_logic := '0';
+    SIGNAL BP_Babord    : std_logic := '1';
+    SIGNAL BP_Tribord   : std_logic := '1';
+    SIGNAL BP_STBY      : std_logic := '1';
+    SIGNAL ledSTBY      : std_logic;
+    SIGNAL ledTribord   : std_logic;
+    SIGNAL ledBabord    : std_logic;
+    SIGNAL codeFonction : std_logic_vector(3 downto 0);
+
+    -- Constante pour la période de l'horloge (20ns = 50MHz)
+    CONSTANT clk_period : time := 20 ns;
+
+BEGIN
+    -- Génération de l'horloge
+    clk_process : PROCESS
+    BEGIN
+        WHILE TRUE LOOP
+            clk <= '0';
+            WAIT FOR clk_period / 2;
+            clk <= '1';
+            WAIT FOR clk_period / 2;
+        END LOOP;
+    END PROCESS;
+
+    -- Stimuli pour tester le composant
+    stim_process : PROCESS
+    BEGIN
+        -- Reset du système
+        reset_n <= '0';
+        WAIT FOR 10 ms; -- Maintenir le reset pendant 10 ms
+        reset_n <= '1';
+        WAIT FOR 10 ms;
+
+        -- Test de l'allumage avec BP_STBY
+        BP_STBY <= '0'; -- Appui sur BP_STBY
+        WAIT FOR 20 ms; -- Maintenir l'appui pendant 20 ms
+        BP_STBY <= '1'; -- Relâchement de BP_STBY
+        WAIT FOR 50 ms; -- Attente pour temporisation
+
+        -- Test de Babord (BP_Babord activé)
+        BP_Babord <= '0'; -- Appui sur BP_Babord
+        WAIT FOR 30 ms; -- Maintenir l'appui pendant 30 ms
+        BP_Babord <= '1'; -- Relâchement de BP_Babord
+        WAIT FOR 100 ms; -- Attente pour transition
+
+        -- Test de Tribord (BP_Tribord activé)
+        BP_Tribord <= '0'; -- Appui sur BP_Tribord
+        WAIT FOR 30 ms; -- Maintenir l'appui pendant 30 ms
+        BP_Tribord <= '1'; -- Relâchement de BP_Tribord
+        WAIT FOR 100 ms; -- Attente pour transition
+
+        -- Test du Mode Auto (BP_STBY activé à nouveau)
+        BP_STBY <= '0'; -- Appui sur BP_STBY
+        WAIT FOR 50 ms; -- Maintenir l'appui pendant 50 ms
+        BP_STBY <= '1'; -- Relâchement de BP_STBY
+        WAIT FOR 100 ms; -- Attente pour transition
+
+        -- Fin du test
+        WAIT;
+    END PROCESS;
+END behavior;

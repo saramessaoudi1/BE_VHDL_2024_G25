@@ -1,0 +1,4 @@
+# Compile of bouton_tb.vhd was successful.
+# Compile of gestion_bouton.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui -l msim_transcript work.bouton_tb

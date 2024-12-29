@@ -1,0 +1,28 @@
+# vsim -gui -l msim_transcript work.bouton_tb 
+# Start time: 00:21:33 on Dec 17,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.bouton_tb(behavior)
+# Loading work.gestion_bouton(simple)
+add wave  \
+sim:/bouton_tb/clk \
+sim:/bouton_tb/reset_n \
+sim:/bouton_tb/BP_Babord \
+sim:/bouton_tb/BP_Tribord \
+sim:/bouton_tb/BP_STBY \
+sim:/bouton_tb/ledSTBY \
+sim:/bouton_tb/ledTribord \
+sim:/bouton_tb/ledBabord \
+sim:/bouton_tb/codeFonction
+add wave  \
+sim:/bouton_tb/uut/etat \
+sim:/bouton_tb/uut/enable \
+sim:/bouton_tb/uut/fin
+run -all
+# WARNING: No extended dataflow license exists
+# Unrecognized paper size (Letter), using Custom
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/etudiant/Desktop/wave.do
+# End time: 12:49:58 on Dec 17,2024, Elapsed time: 12:28:25
+# Errors: 1, Warnings: 1
